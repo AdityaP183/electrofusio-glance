@@ -1,5 +1,3 @@
-import ThemeColorToggle from "@/components/app/themeToggle/ThemeColorToggle";
-import ThemeModeToggle from "@/components/app/themeToggle/themeModeToggle";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -54,7 +52,7 @@ export default function Home() {
 						<Button
 							variant="outline"
 							className="flex items-center gap-2"
-                            onClick={() => navigate(link.href)}
+							onClick={() => navigate(link.href)}
 						>
 							Go <ArrowRight size={16} />
 						</Button>
