@@ -17,7 +17,7 @@ const availableThemeColors = [
 	{ name: "Orange", light: "bg-orange-500", dark: "bg-orange-700" },
 ];
 
-export default function ThemeColorToggle() {
+export default function ColorToggle() {
 	const { themeColor, setThemeColor } = useThemeContext();
 	const { theme } = useTheme();
 

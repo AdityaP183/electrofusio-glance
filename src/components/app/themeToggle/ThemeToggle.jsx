@@ -3,8 +3,8 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import React from "react";
 
-export default function ThemeModeToggle() {
-	const {theme, setTheme} = useTheme();
+export default function ThemeToggle() {
+	const { theme, setTheme } = useTheme();
 	return (
 		<Button
 			variant="outline"

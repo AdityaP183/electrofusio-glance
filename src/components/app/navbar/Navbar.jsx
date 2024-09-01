@@ -1,7 +1,7 @@
 import { NavigationMenu } from "@/components/ui/navigation-menu";
-// import ThemeColorToggle from "../themeToggle/ThemeColorToggle";
-// import ThemeModeToggle from "../themeToggle/themeModeToggle";
 import { Link } from "react-router-dom";
+import ColorToggle from "../colorToggle/ColorToggle";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 export default function Navbar() {
 	return (
@@ -12,10 +12,10 @@ export default function Navbar() {
 					<h4 className="font-semibold">Examples</h4>
 				</Link>
 			</div>
-			{/* <div className="flex items-center gap-3">
-				<ThemeColorToggle />
-				<ThemeModeToggle />
-			</div> */}
+			<div className="flex items-center gap-3">
+				<ColorToggle />
+				<ThemeToggle />
+			</div>
 		</NavigationMenu>
 	);
 }
