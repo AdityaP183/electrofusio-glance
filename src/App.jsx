@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import ButtonsDisplay from "./sections/ButtonsDisplay";
 import ChartsDisplay from "./sections/ChartsDisplay";
 import AuthDisplay from "./sections/AuthDisplay";
+import DataTableDisplay from "./sections/DataTableDisplay";
+import ProductDisplay from "./sections/ProductDisplay";
 
 export default function App() {
 	return (
@@ -19,7 +21,7 @@ export default function App() {
 			<ThemeDataProvider>
 				<BrowserRouter>
 					<Navbar />
-					<div className="px-3 md:w-1/2 md:px-1 md:mx-auto">
+					<div className="px-3 lg:w-1/2 lg:px-1 md:mx-auto">
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route
@@ -28,6 +30,14 @@ export default function App() {
 							/>
 							<Route path="/charts" element={<ChartsDisplay />} />
 							<Route path="/auth" element={<AuthDisplay />} />
+							<Route
+								path="/table"
+								element={<DataTableDisplay />}
+							/>
+							<Route
+								path="product-card"
+								element={<ProductDisplay />}
+							/>
 						</Routes>
 					</div>
 				</BrowserRouter>
